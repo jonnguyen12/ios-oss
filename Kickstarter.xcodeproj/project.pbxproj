@@ -372,7 +372,6 @@
 		8A0B1E2C24DA1327009E90C0 /* GraphLocationTemplates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0B1E2B24DA1327009E90C0 /* GraphLocationTemplates.swift */; };
 		8A0C3D1125AE6F4900310034 /* Segment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A417DE625AE2F8600A2C406 /* Segment.framework */; };
 		8A0C3D1525AE6F8C00310034 /* Segment.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A417DE625AE2F8600A2C406 /* Segment.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8A0C3D3A25AE8B1400310034 /* Segment.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A417DE625AE2F8600A2C406 /* Segment.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8A13D15F249559CB007E2C0B /* PledgeExpandableRewardsHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A13D15E249559CB007E2C0B /* PledgeExpandableRewardsHeaderViewController.swift */; };
 		8A13D16124955A2E007E2C0B /* PledgeExpandableRewardsHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A13D16024955A2E007E2C0B /* PledgeExpandableRewardsHeaderViewModel.swift */; };
 		8A13D163249566B8007E2C0B /* PledgeExpandableHeaderRewardHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A13D162249566B8007E2C0B /* PledgeExpandableHeaderRewardHeaderCell.swift */; };
@@ -396,6 +395,9 @@
 		8A213CF5239EAF5600BBB4C7 /* TrackingClientConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A213CE6239EAEA400BBB4C7 /* TrackingClientConfigurationTests.swift */; };
 		8A213CF7239EB22900BBB4C7 /* MockTrackingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A213CE9239EAEA400BBB4C7 /* MockTrackingClient.swift */; };
 		8A23203125B0ECF700B940C3 /* IdentifyingTrackingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A23203025B0ECF700B940C3 /* IdentifyingTrackingClient.swift */; };
+		8A23204625B11C5400B940C3 /* Appboy_iOS_SDK.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AED83C125AF9B62000FB6C2 /* Appboy_iOS_SDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8A23204725B11C5400B940C3 /* Segment_Appboy.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AED83C025AF9B62000FB6C2 /* Segment_Appboy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8A23204F25B11F0500B940C3 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A23204E25B11F0500B940C3 /* SDWebImage.framework */; };
 		8A23EF0822F11470001262E1 /* RewardCardContainerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A23EF0722F11470001262E1 /* RewardCardContainerViewTests.swift */; };
 		8A29790C234EA7A70039396D /* PledgeAmountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A29790B234EA7A70039396D /* PledgeAmountSummaryViewController.swift */; };
 		8A297910234EA8FD0039396D /* PledgeAmountSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A29790F234EA8FD0039396D /* PledgeAmountSummaryViewModel.swift */; };
@@ -447,6 +449,9 @@
 		8A4E954924525EC100A578CF /* BackingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4E954824525EC100A578CF /* BackingState.swift */; };
 		8A4E954B245268F100A578CF /* ManagePledgeViewBackingEnvelopeTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4E954A245268F100A578CF /* ManagePledgeViewBackingEnvelopeTemplate.swift */; };
 		8A5CB28424C11819003113D4 /* RewardAddOnSelectionContinueCTAViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5CB28324C11819003113D4 /* RewardAddOnSelectionContinueCTAViewModelTests.swift */; };
+		8A5DB61F25B11F2F00AFA68D /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A23204E25B11F0500B940C3 /* SDWebImage.framework */; };
+		8A5DB62025B11F3900AFA68D /* SDWebImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A23204E25B11F0500B940C3 /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8A5DB62B25B1202000AFA68D /* Segment.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A417DE625AE2F8600A2C406 /* Segment.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8A64F16624BE6528004917E2 /* RewardAddOnSelectionViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A64F16524BE6528004917E2 /* RewardAddOnSelectionViewControllerTests.swift */; };
 		8A65E79B25016A22006F81CC /* FirebaseInstallations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A65E79A25016A22006F81CC /* FirebaseInstallations.framework */; };
 		8A65E79E2501AE89006F81CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A65E79D2501AE89006F81CC /* GoogleService-Info.plist */; };
@@ -534,19 +539,9 @@
 		8AE8D86623466EB9005860C6 /* UpdateBackingInput+Constructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE8D86523466EB9005860C6 /* UpdateBackingInput+Constructor.swift */; };
 		8AE8D86823466EDB005860C6 /* UpdateBackingInput+ConstructorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE8D86723466EDB005860C6 /* UpdateBackingInput+ConstructorTests.swift */; };
 		8AED83C225AF9B62000FB6C2 /* Segment_Appboy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AED83C025AF9B62000FB6C2 /* Segment_Appboy.framework */; };
-		8AED83C325AF9B62000FB6C2 /* Segment_Appboy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8AED83C025AF9B62000FB6C2 /* Segment_Appboy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8AED83C425AF9B62000FB6C2 /* Appboy_iOS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AED83C125AF9B62000FB6C2 /* Appboy_iOS_SDK.framework */; };
-		8AED83C525AF9B62000FB6C2 /* Appboy_iOS_SDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8AED83C125AF9B62000FB6C2 /* Appboy_iOS_SDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8AED83C925AF9BC7000FB6C2 /* Appboy_iOS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AED83C125AF9B62000FB6C2 /* Appboy_iOS_SDK.framework */; };
 		8AED83CA25AF9BC7000FB6C2 /* Segment_Appboy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AED83C025AF9B62000FB6C2 /* Segment_Appboy.framework */; };
-		8AED83CB25AF9BC8000FB6C2 /* Appboy_iOS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AED83C125AF9B62000FB6C2 /* Appboy_iOS_SDK.framework */; };
-		8AED83CC25AF9BC8000FB6C2 /* Segment_Appboy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AED83C025AF9B62000FB6C2 /* Segment_Appboy.framework */; };
-		8AED83CD25AF9BCA000FB6C2 /* Appboy_iOS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AED83C125AF9B62000FB6C2 /* Appboy_iOS_SDK.framework */; };
-		8AED83CE25AF9BCA000FB6C2 /* Segment_Appboy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AED83C025AF9B62000FB6C2 /* Segment_Appboy.framework */; };
-		8AED83CF25AF9BD9000FB6C2 /* Segment_Appboy.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AED83C025AF9B62000FB6C2 /* Segment_Appboy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8AED83D325AF9BDF000FB6C2 /* Appboy_iOS_SDK.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AED83C125AF9B62000FB6C2 /* Appboy_iOS_SDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8AED83D425AF9BE9000FB6C2 /* Appboy_iOS_SDK.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AED83C125AF9B62000FB6C2 /* Appboy_iOS_SDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8AED83D525AF9BE9000FB6C2 /* Segment_Appboy.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8AED83C025AF9B62000FB6C2 /* Segment_Appboy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8AF2ABD6247ED338009BF5E7 /* PledgeViewCTAContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF2ABD5247ED338009BF5E7 /* PledgeViewCTAContainerView.swift */; };
 		8AF2ABD8247ED350009BF5E7 /* OptimizelyFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF2ABD7247ED350009BF5E7 /* OptimizelyFeature.swift */; };
 		8AF34C722342CBAD000B211D /* UpdateBackingMutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF34C712342CBAD000B211D /* UpdateBackingMutation.swift */; };
@@ -1472,8 +1467,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				A73924011D272312004524C3 /* Kickstarter_Framework.framework in Embed Frameworks */,
-				8AED83C325AF9B62000FB6C2 /* Segment_Appboy.framework in Embed Frameworks */,
-				8AED83C525AF9B62000FB6C2 /* Appboy_iOS_SDK.framework in Embed Frameworks */,
 				D0B45B6C1EF858C00020A8DA /* KsApi.framework in Embed Frameworks */,
 				A7B693E71C8772CE00C49A4F /* Library.framework in Embed Frameworks */,
 			);
@@ -1486,8 +1479,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8AED83D325AF9BDF000FB6C2 /* Appboy_iOS_SDK.framework in CopyFiles */,
-				8AED83CF25AF9BD9000FB6C2 /* Segment_Appboy.framework in CopyFiles */,
+				8A5DB62025B11F3900AFA68D /* SDWebImage.framework in CopyFiles */,
+				8A23204625B11C5400B940C3 /* Appboy_iOS_SDK.framework in CopyFiles */,
+				8A23204725B11C5400B940C3 /* Segment_Appboy.framework in CopyFiles */,
 				8A0C3D1525AE6F8C00310034 /* Segment.framework in CopyFiles */,
 				D08C68AC22AF129D001ED5E8 /* FBSDKCoreKit.framework in CopyFiles */,
 				D08C68AD22AF129D001ED5E8 /* FBSDKLoginKit.framework in CopyFiles */,
@@ -1506,9 +1500,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8AED83D425AF9BE9000FB6C2 /* Appboy_iOS_SDK.framework in CopyFiles */,
-				8AED83D525AF9BE9000FB6C2 /* Segment_Appboy.framework in CopyFiles */,
-				8A0C3D3A25AE8B1400310034 /* Segment.framework in CopyFiles */,
+				8A5DB62B25B1202000AFA68D /* Segment.framework in CopyFiles */,
 				1611EF6423ABDB3D0051CDCC /* Optimizely.framework in CopyFiles */,
 				D08C68AE22AF12E0001ED5E8 /* FBSDKCoreKit.framework in CopyFiles */,
 				D08C68AF22AF12E0001ED5E8 /* FBSDKLoginKit.framework in CopyFiles */,
@@ -1924,6 +1916,7 @@
 		8A213CE9239EAEA400BBB4C7 /* MockTrackingClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockTrackingClient.swift; sourceTree = "<group>"; };
 		8A213CEA239EAEA400BBB4C7 /* TrackingClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingClient.swift; sourceTree = "<group>"; };
 		8A23203025B0ECF700B940C3 /* IdentifyingTrackingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyingTrackingClient.swift; sourceTree = "<group>"; };
+		8A23204E25B11F0500B940C3 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = Carthage/Build/iOS/SDWebImage.framework; sourceTree = "<group>"; };
 		8A23EF0722F11470001262E1 /* RewardCardContainerViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardCardContainerViewTests.swift; sourceTree = "<group>"; };
 		8A29790B234EA7A70039396D /* PledgeAmountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PledgeAmountSummaryViewController.swift; sourceTree = "<group>"; };
 		8A29790F234EA8FD0039396D /* PledgeAmountSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PledgeAmountSummaryViewModel.swift; sourceTree = "<group>"; };
@@ -2883,6 +2876,7 @@
 				D00A3765225BCE2600F46F47 /* Prelude.framework in Frameworks */,
 				D0D58DC32257FCA900532AC1 /* Prelude_UIKit.framework in Frameworks */,
 				D0BE6F282286397400D05A10 /* ReactiveExtensions.framework in Frameworks */,
+				8A5DB61F25B11F2F00AFA68D /* SDWebImage.framework in Frameworks */,
 				D00A3766225BCE8400F46F47 /* ReactiveSwift.framework in Frameworks */,
 				8AED83CA25AF9BC7000FB6C2 /* Segment_Appboy.framework in Frameworks */,
 			);
@@ -2892,8 +2886,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AED83CB25AF9BC8000FB6C2 /* Appboy_iOS_SDK.framework in Frameworks */,
-				8AED83CC25AF9BC8000FB6C2 /* Segment_Appboy.framework in Frameworks */,
 				8AA3DB32250AC42F009AC8EA /* Library.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2929,6 +2921,7 @@
 				8AED83C425AF9B62000FB6C2 /* Appboy_iOS_SDK.framework in Frameworks */,
 				8AA5B069235E25820022F5F0 /* AppCenterDistribute.framework in Frameworks */,
 				D0B7124622AEEDBC00317BAF /* FBSDKCoreKit.framework in Frameworks */,
+				8A23204F25B11F0500B940C3 /* SDWebImage.framework in Frameworks */,
 				D08C68A822AF104B001ED5E8 /* FBSDKLoginKit.framework in Frameworks */,
 				8A86D7B624FDAE6500037A7B /* FirebaseCrashlytics.framework in Frameworks */,
 				8A86D7DC24FDC7CA00037A7B /* PromisesObjC.framework in Frameworks */,
@@ -2950,11 +2943,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1611EF6323ABDA820051CDCC /* Optimizely.framework in Frameworks */,
-				8AED83CE25AF9BCA000FB6C2 /* Segment_Appboy.framework in Frameworks */,
 				A724BA641D2BFCC80041863C /* Kickstarter_Framework.framework in Frameworks */,
 				D0B7124A22AEEDFA00317BAF /* FBSDKCoreKit.framework in Frameworks */,
 				D08C68AB22AF105C001ED5E8 /* FBSDKLoginKit.framework in Frameworks */,
-				8AED83CD25AF9BCA000FB6C2 /* Appboy_iOS_SDK.framework in Frameworks */,
 				D00A371922580E9D00F46F47 /* FBSnapshotTestCase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3864,6 +3855,7 @@
 				D0D58D822257FAE000532AC1 /* ReactiveExtensions_TestHelpers.framework */,
 				D0D58D7B2257FADE00532AC1 /* ReactiveExtensions.framework */,
 				D0D58D7F2257FADF00532AC1 /* ReactiveSwift.framework */,
+				8A23204E25B11F0500B940C3 /* SDWebImage.framework */,
 				8AED83C025AF9B62000FB6C2 /* Segment_Appboy.framework */,
 				8A417DE625AE2F8600A2C406 /* Segment.framework */,
 				D09362A8225D693000E1411A /* Stripe.framework */,
