@@ -15,12 +15,17 @@ public final class Koala {
   internal private(set) var config: Config?
   private let device: UIDeviceType
   private let distinctId: String
-  internal private(set) var loggedInUser: User?
+  internal private(set) var loggedInUser: User? {
+    didSet {
+      self.identify(self.loggedInUser)
+    }
+  }
+
   public var logEventCallback: ((String, [String: Any]) -> Void)?
   private var preferredContentSizeCategory: UIContentSizeCategory?
   private var preferredContentSizeCategoryObserver: Any?
   private let screen: UIScreenType
-  private let segmentClient: TrackingClientType
+  private let segmentClient: TrackingClientType & IdentifyingTrackingClient
 
   private enum DataLakeApprovedEvent: String, CaseIterable {
     case activityFeedViewed = "Activity Feed Viewed"
@@ -374,7 +379,7 @@ public final class Koala {
     device: UIDeviceType = UIDevice.current,
     loggedInUser: User? = nil,
     screen: UIScreenType = UIScreen.main,
-    segmentClient: TrackingClientType = Analytics.configuredClient(),
+    segmentClient: TrackingClientType & IdentifyingTrackingClient = Analytics.configuredClient(),
     distinctId: String = (UIDevice.current.identifierForVendor ?? UUID()).uuidString
   ) {
     self.bundle = bundle
@@ -387,7 +392,24 @@ public final class Koala {
     self.segmentClient = segmentClient
     self.distinctId = distinctId
 
+    self.identify(self.loggedInUser)
+
     self.updateAndObservePreferredContentSizeCategory()
+  }
+
+  /// Configure Tracking Client's supporting user identity
+  private func identify(_ user: User?) {
+    guard let user = user else { return }
+
+    self.segmentClient.identify(
+      "\(user.id)",
+      traits: [
+        "name": user.name,
+        "is_creator": user.isCreator,
+        "backed_projects_count": user.stats.backedProjectsCount ?? 0,
+        "created_projects_count": user.stats.createdProjectsCount ?? 0
+      ]
+    )
   }
 
   private func updateAndObservePreferredContentSizeCategory() {

@@ -1134,6 +1134,46 @@ final class KoalaTests: TestCase {
     )
   }
 
+  func testIdentifyingTrackingClient() {
+    let user = User.template
+      |> User.lens.stats.backedProjectsCount .~ 2
+      |> User.lens.stats.createdProjectsCount .~ 3
+
+    AppEnvironment.updateCurrentUser(user)
+
+    XCTAssertEqual(self.segmentTrackingClient.userId, "\(user.id)")
+    XCTAssertEqual(self.segmentTrackingClient.traits?["name"] as? String, user.name)
+    XCTAssertEqual(self.segmentTrackingClient.traits?["is_creator"] as? Bool, user.isCreator)
+    XCTAssertEqual(
+      self.segmentTrackingClient.traits?["backed_projects_count"] as? Int,
+      user.stats.backedProjectsCount
+    )
+    XCTAssertEqual(
+      self.segmentTrackingClient.traits?["created_projects_count"] as? Int,
+      user.stats.createdProjectsCount
+    )
+
+    let user2 = user
+      |> User.lens.id .~ 9_999
+      |> User.lens.name .~ "Another User"
+      |> User.lens.stats.backedProjectsCount .~ 4
+      |> User.lens.stats.createdProjectsCount .~ 0
+
+    AppEnvironment.updateCurrentUser(user2)
+
+    XCTAssertEqual(self.segmentTrackingClient.userId, "\(user2.id)")
+    XCTAssertEqual(self.segmentTrackingClient.traits?["name"] as? String, user2.name)
+    XCTAssertEqual(self.segmentTrackingClient.traits?["is_creator"] as? Bool, user2.isCreator)
+    XCTAssertEqual(
+      self.segmentTrackingClient.traits?["backed_projects_count"] as? Int,
+      user2.stats.backedProjectsCount
+    )
+    XCTAssertEqual(
+      self.segmentTrackingClient.traits?["created_projects_count"] as? Int,
+      user2.stats.createdProjectsCount
+    )
+  }
+
   func testContextProperties() {
     let client = MockTrackingClient()
     let koala = Koala(client: client)
